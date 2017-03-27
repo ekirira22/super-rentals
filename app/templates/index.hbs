@@ -3,7 +3,7 @@
 We hope you find exactly what you're looking for in a place to stay. <br>
 <ul>
   {{#each model as |rental|}}
-     {{rental-tile rental=rental}}
+     {{rental-tile rental=rental destroyRental = "destroyRental"}}
   {{/each}}
 </ul>
 {{#link-to 'about'}}About{{/link-to}} <br>
