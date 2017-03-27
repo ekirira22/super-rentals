@@ -1,0 +1,17 @@
+<li>
+  {{rental.owner}}'s {{rental.type}} in {{rental.city}}
+
+  {{#if isImageShowing}}
+      <p> <img src={{rental.image}} alt={{rental.type}} height="600" width="700" {{action 'imageHide'}}/></p>
+    {{else}}
+      <button {{action 'imageShow'}}> Show Image</button>
+  {{/if}}
+
+</li>
+
+
+<!--Basicaly whats happening here is that we are refactoring our code by removing the above code from
+index.js , creating a vaiable which in return that code removed id brought here and referred to
+
+Remember we said components affect how a template behaves we are noe going to add functionality to this components b trying
+show and hide images-->
