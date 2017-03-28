@@ -1,14 +1,15 @@
 <li>
-  {{rental.owner}}'s {{rental.type}} in {{rental.city}}
-
+  {{rental.owner}}'s {{rental.type}} in {{rental.city}} <br>
+  {{#link-to 'rental' rental.id}} Click to View more details {{/link-to}} <br> <br>
+    <!--We intentionally replaced "{{rental.owner}}'s {{rental.type}} in {{rental.city}}" with "Click to View more Details" for fun :)-->
   {{#if isImageShowing}}
-      <p> <img src={{rental.image}} alt={{rental.type}} height="600" width="700" {{action 'imageHide'}}/></p>
+      <p> <img src={{rental.image}} alt={{rental.type}} height="600" width="700"/></p>
+      <button {{action 'imageHide'}}>Hide Image</button>
     {{else}}
       <button {{action 'imageShow'}}> Show Image</button>
   {{/if}}
-   {{update-rental rental=rental update="update"}}
-  <button {{action 'delete' rental}}> Delete Rental </button>
-
+   <br>
+   <hr>
 </li>
 
 
