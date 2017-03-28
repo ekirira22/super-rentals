@@ -16,6 +16,9 @@ export default Ember.Component.extend({
       };
       this.set('updateRentalForm', false)
       this.sendAction('update',rental, params);
+    },
+    hideUpdate(){
+      this.set('updateRentalForm', false);
     }
   }
 
