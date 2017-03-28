@@ -1,7 +1,7 @@
-# super-rentals
+# SUPER-RENTALS
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This super-rentals ember app is a tutorial guide on how to create, manipulate and troubleshoot some of the ember apps
+that you want to make, it is detailed with comments and each commit is a different step along the way
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/ekirira22/super-rentals.git` this repository
 * `cd super-rentals`
 * `npm install`
 * `bower install`
@@ -23,7 +23,7 @@ You will need the following things properly installed on your computer.
 ## Running / Development
 
 * `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit your app at 'http://localhost:4200').
 
 ### Code Generators
 

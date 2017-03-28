@@ -1,0 +1,38 @@
+{{#if addNewRental}} <!--Now get this, the addNewRental is the value that is either true or false, hence the if statements below it -->
+  <h1>New Rental </h1>
+  <div>
+    <form class="jumbotron">
+      <div class="form-group">
+        <label for="owner">Name for Owner</label>
+        {{input value = owner id="owner"}}
+      </div>
+      <div class="form-group">
+        <label for="type">Type</label>
+        {{input value = type id="type"}}
+      </div>
+
+      <div class="form-group">
+        <label for="city">City</label>
+        {{input value = city id="city"}}
+      </div>
+
+      <div class="form-group">
+        <label for="bedrooms">Number of Bedrooms</label>
+        {{input value = bedrooms id="bedrooms"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value = image id="image"}}
+      </div>
+      <button {{action 'saveRental1'}} >Save </button>
+      <button {{action 'hideForm'}}> Hide</button> <!--We've added this action that hides the form when clicked-->
+
+    </form>
+  </div>
+{{else}}
+  <button {{action 'rentalFormShow'}}> Add a new Rental</button>
+{{/if}}
+<!--And in this other case the rentalFormShow is the action that we'll define in the behavioural new-rental.js
+  if you are keen enough you'll note we are coding upwards or backwards, whichever feels good..lol :)-->
+<!--Now lets go and add behavior to the new-rental.js .. :)-->
